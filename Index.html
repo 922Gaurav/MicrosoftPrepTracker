@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Prep Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --section-bg: #fff;
+      --header-bg: #0078d4;
+      --link-color: #0078d4;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --section-bg: #1e1e1e;
+      --header-bg: #005fa3;
+      --link-color: #90caf9;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: var(--header-bg);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    #controls {
+      text-align: center;
+      margin: 1rem;
+    }
+    button {
+      margin: 0.3rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #reset-btn { background: #d9534f; color: white; }
+    #dark-mode-btn { background: #5bc0de; color: white; }
+    #reset-btn:hover { background: #c9302c; }
+    #dark-mode-btn:hover { background: #31b0d5; }
+    #progress-bar {
+      margin: 1rem auto;
+      width: 90%;
+      background: #ccc;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    #progress-bar-inner {
+      height: 20px;
+      background: #28a745;
+      width: 0%;
+      color: white;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    section {
+      padding: 1.5rem;
+      background: var(--section-bg);
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--link-color);
+    }
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    .checkbox {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Microsoft Interview Prep Tracker</h1>
+    <p>Target: Crack Microsoft in 1.5 Months</p>
+  </header>
+
+  <div id="controls">
+    <button id="reset-btn">Reset All Progress</button>
+    <button id="dark-mode-btn">Toggle Dark Mode</button>
+  </div>
+
+  <div id="progress-bar">
+    <div id="progress-bar-inner">0%</div>
+  </div>
+
+  <section>
+    <h2>Week 1: DSA Foundation + Resume</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb1"> <a href="https://neetcode.io/" target="_blank">NeetCode DSA Crash Course</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb2"> <a href="https://leetcode.com/list/xi4ci4ig/" target="_blank">Blind 75 List</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb3"> Resume & LinkedIn Tailoring (<a href="https://www.youtube.com/watch?v=5_8zSbi4nSg" target="_blank">Video</a> | <a href="https://www.geeksforgeeks.org/how-to-create-the-best-software-engineering-resume/" target="_blank">Article</a>)</li>
+      <li><input type="checkbox" class="checkbox" id="cb4"> Solve 10 LeetCode problems (<a href="https://www.youtube.com/watch?v=8hly31xKli0" target="_blank">Video</a> | <a href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions" target="_blank">Article</a>)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Week 2: Arrays, Strings, Hashing</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb5"> <a href="https://www.youtube.com/watch?v=5o-kdjv7FD0" target="_blank">Arrays & Hashing (takeUforward)</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb6"> Solve <a href="https://leetcode.com/problems/two-sum/" target="_blank">Two Sum</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb7"> Solve <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank">Longest Substring Without Repeating Characters</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb8"> Practice Sliding Window pattern (<a href="https://www.youtube.com/watch?v=MK-NZ4hN7rs" target="_blank">Video</a> | <a href="https://leetcode.com/explore/learn/card/sliding-window/" target="_blank">Article</a>)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Week 3: Trees, Graphs, Linked Lists</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb9"> <a href="https://www.youtube.com/watch?v=ztE0sETGk2U" target="_blank">Binary Tree Basics (takeUforward)</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb10"> <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank">Level Order Traversal</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb11"> Solve 10 Tree/Graph questions (<a href="https://www.youtube.com/watch?v=H5JubkIy_p8" target="_blank">Video</a> | <a href="https://takeuforward.org/interviews/strivers-tree-series-top-coding-interview-problems/" target="_blank">Article</a>)</li>
+      <li><input type="checkbox" class="checkbox" id="cb12"> <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank">Linked List Cycle</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Week 4: LLD + Microsoft Qs</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb13"> <a href="https://www.youtube.com/watch?v=xpAx5OvuQ6M" target="_blank">Parking Lot Design (Gaurav Sen)</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb14"> Practice 5 Microsoft LeetCode Problems (<a href="https://leetcode.com/company/microsoft/" target="_blank">Company Tag</a>)</li>
+      <li><input type="checkbox" class="checkbox" id="cb15"> Behavioral Qs (STAR Format) (<a href="https://www.youtube.com/watch?v=9gNYvWj6K1g" target="_blank">Video</a> | <a href="https://www.themuse.com/advice/star-interview-method" target="_blank">Article</a>)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Week 5: System Design</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb16"> <a href="https://www.youtube.com/watch?v=Q3Z3NH_TAjg" target="_blank">System Design Primer (URL Shortener)</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb17"> Review Azure Functions, Service Bus, Key Vault (<a href="https://www.youtube.com/watch?v=1rJ8oy8xjZ4" target="_blank">Video</a> | <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview" target="_blank">Article</a>)</li>
+      <li><input type="checkbox" class="checkbox" id="cb18"> Solve 5 more LeetCode challenges (<a href="https://www.youtube.com/watch?v=Kl2t1f9cV8c" target="_blank">Video</a> | <a href="https://leetcode.com/problemset/all/" target="_blank">Article</a>)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Week 6: Mocks + Apply</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox" id="cb19"> <a href="https://www.pramp.com/" target="_blank">Do 2 mock interviews on Pramp</a></li>
+      <li><input type="checkbox" class="checkbox" id="cb20"> Final Resume Polish (<a href="https://www.youtube.com/watch?v=9AYyAx2GOaY" target="_blank">Video</a> | <a href="https://www.geeksforgeeks.org/how-to-create-the-best-software-engineering-resume/" target="_blank">Article</a>)</li>
+      <li><input type="checkbox" class="checkbox" id="cb21"> Apply via <a href="https://careers.microsoft.com/" target="_blank">Microsoft Careers</a> + LinkedIn</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Bonus Resources</h2>
+    <ul>
+      <li><a href="https://github.com/donnemartin/system-design-primer" target="_blank">System Design Primer (GitHub)</a></li>
+      <li><a href="https://seanprashad.com/leetcode-patterns/" target="_blank">Leetcode Patterns</a></li>
+      <li><a href="https://www.codingninjas.com/blog/2021/10/06/love-babbar-dsa-sheet/" target="_blank">Love Babbar Sheet</a></li>
+    </ul>
+  </section>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.checkbox');
+    const progressBar = document.getElementById('progress-bar-inner');
+    const updateProgress = () => {
+      const total = checkboxes.length;
+      const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+      const percent = Math.round((checked / total) * 100);
+      progressBar.style.width = percent + '%';
+      progressBar.textContent = percent + '%';
+    };
+
+    checkboxes.forEach(cb => {
+      const saved = localStorage.getItem(cb.id);
+      if (saved === 'true') cb.checked = true;
+      cb.addEventListener('change', () => {
+        localStorage.setItem(cb.id, cb.checked);
+        updateProgress();
+      });
+    });
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+      checkboxes.forEach(cb => {
+        cb.checked = false;
+        localStorage.removeItem(cb.id);
+      });
+      updateProgress();
+    });
+
+    // Dark mode toggle
+    const darkModeBtn = document.getElementById('dark-mode-btn');
+    darkModeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+
+    // Restore dark mode state
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>
